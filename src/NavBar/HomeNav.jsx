@@ -29,7 +29,7 @@ const HomeNav = () => {
               {" "}
               <Vet>
                 <Icon src="/Vector (3).png" alt="Vet" />
-                Veteriniarians
+                Veterinarians
               </Vet>
             </Link>
           </NavContainer>
@@ -46,10 +46,16 @@ const Navbar = styled.div`
   height: 86px;
   background: #34302d;
   border-bottom: 3px solid #6db33e;
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 const ImageTag = styled.img`
   margin: 20px;
+  width: 100px; /* Adjust according to your design */
+  height: auto; /* Maintain aspect ratio */
 `;
 
 const LogoContainer = styled.div`
@@ -57,11 +63,20 @@ const LogoContainer = styled.div`
   align-items: center;
   text-align: center;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const NavContainer = styled.div`
   display: flex;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    margin-top: 10px;
+  }
 `;
 
 const Icon = styled.img`
@@ -74,6 +89,10 @@ const Homme = styled.h1`
   font-style: normal;
   font-size: 20px;
   line-height: 29px;
+
+  @media (max-width: 768px) {
+    padding: 10px 0;
+  }
 `;
 
 const Ownners = styled.h1`
@@ -82,6 +101,10 @@ const Ownners = styled.h1`
   font-style: normal;
   font-size: 20px;
   line-height: 29px;
+
+  @media (max-width: 768px) {
+    padding: 10px 0;
+  }
 `;
 
 const Vet = styled.h1`
@@ -90,4 +113,8 @@ const Vet = styled.h1`
   font-style: normal;
   font-size: 20px;
   line-height: 29px;
+
+  @media (max-width: 768px) {
+    padding: 10px 0;
+  }
 `;
